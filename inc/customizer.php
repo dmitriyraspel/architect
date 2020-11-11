@@ -43,7 +43,7 @@ function architect_customize_register( $wp_customize ) {
 			'type'        => 'checkbox',
 			'section'     => 'title_tagline',
 			'priority'    => 10,
-			'label'       => __( 'показывать логотип и заголовок', 'architect' ),
+			'label'       => __( 'Display Site Logo & Title', 'architect' ),
 		)
 	);
 
@@ -61,7 +61,7 @@ function architect_customize_register( $wp_customize ) {
 			'type'        => 'checkbox',
 			'section'     => 'title_tagline',
 			'priority'    => 11,
-			'label'       => __( 'показывать заголовок и описание', 'architect' ),
+			'label'       => __( 'Display Site Title & Tagline', 'architect' ),
 		)
 	);
 
