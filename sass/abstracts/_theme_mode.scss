@@ -1,0 +1,64 @@
+.night-dark {
+   background: $dark_mode-color__background;
+   background-color: $dark_mode-color__background; 
+}
+
+
+/* -- Brutal pink -- */
+.brutal-pink {
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      color: $pink_mode-color__text-heading;
+   }
+   .site-branding a,
+   .site-branding a:visited {
+      color: $pink_mode-color__site-title;
+   }
+   .site-branding a:hover {
+      color: $pink_mode-color__site-title-hover;
+   }
+
+}
+
+/* -- Eco green -- */
+.eco-green {
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      color: $green_mode-color__text-heading;
+   }
+
+}
+
+/* -- ocean blue -- */
+.ocean-blue {
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      color: $blue_mode-color__text-heading;
+   }
+
+}
+
+/* -- WB -- */
+.ocean-blue {
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      color: $wb_mode-color__black;
+   }
+
+}

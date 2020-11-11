@@ -1,0 +1,80 @@
+@import "abstracts/mixins";
+@import "abstracts/colors";
+
+// stylelint-disable value-keyword-case
+$font__main: 'Lora', serif;
+$font__system: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+// stylelint-enable value-keyword-case
+$font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+$font__line-height-button: 1.5;
+
+$font-weight-400: 400;
+$font-weight-600: 600;
+
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-h3: 1.44em;
+
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+$radius-main: 6px;
+$radius-button: $radius-main;
+$radius-fields: $radius-main;
+
+
+//width
+$container_width: calc(100% - 40px);
+$content__width: 720px;
+$alignwide__width: 1168px;
+
+
+$main-spacing: 20px;
+$spacing-vertical: 24px;
+$spacing-horizontal-1_5em: 1.5em; 
+$header-margin: 20px;
+$list-padding: calc(0.6 * 20px );
+$nav--padding: calc(0.8 * 20px );
+
+$button-padding-vertical: 8px;
+$button-padding-horizontal: 24px;
+$button-padding-vertical_is-style-outline: $button-padding-vertical - 2px;
+$button-padding-horizontal_is-style-outline: $button-padding-horizontal - 2px; 
+
+$input-padding-vertical: 8px;
+$input-padding-horizontal: 24px;
+
+$tablet-screen: 768px;
+$desktop-screen: 1000px;
+
+$base-transition: all 0.2s ease;
+
+$columns: (
+	1: 100%,
+	2: 50%,
+	3: 33.33%,
+	4: 25%,
+	5: 20%,
+	6: 16.66%,
+	7: 14.28%,
+	8: 12.5%,
+	9: 11.11%
+);
+$columns__margin: 3.8%;
+
+@mixin test {
+	border: 1px solid red;
+	background: $color__background-ins;
+}
+@mixin test1 {
+	border: 1px solid red;
+}
+
+.test {
+	border: 1px solid #f109b7;
+}

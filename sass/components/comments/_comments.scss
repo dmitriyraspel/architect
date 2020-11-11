@@ -1,0 +1,18 @@
+.comments-area {
+	@include container-content;
+	margin-top: 1.6 * $main-spacing;
+	margin-bottom: 1.6 * $main-spacing;
+
+	@media screen and (min-width: $content__width) {
+		margin-top: 3.4 * $main-spacing;
+		margin-bottom: 3.4 * $main-spacing;
+	}
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}

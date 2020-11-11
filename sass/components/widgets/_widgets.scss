@@ -1,0 +1,12 @@
+.widget {
+	margin: 0 0 $main-spacing;
+
+	h2 {
+		font-size: $font-h3;
+	}
+
+	// Make sure select elements fit in widgets.
+	select {
+		max-width: 100%;
+	}
+}

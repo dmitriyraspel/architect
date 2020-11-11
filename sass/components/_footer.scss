@@ -1,0 +1,96 @@
+.site-footer {
+   // background: $color__background-footer;
+   position: relative;
+   // @include test1;
+   padding: $header-margin 0;
+   
+
+   .arrow-top {
+      position: absolute;
+      right: 20px;
+      // bottom: calc(50% - 16px);
+      bottom: 20px;
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      border: 1px solid #666666;
+
+      a {
+         display: block;
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         text-decoration: none;
+         color: $color__footer-link;
+      }
+   }
+   
+   .footer__nav-wrap {
+      @include container-content;
+      padding: $header-margin 0;
+      
+      @media screen and (min-width: $content__width) {
+         display: flex;
+         justify-content: space-between;
+         align-items: flex-start;
+      }
+
+      & > * {
+         margin-top: $header-margin;
+      }
+
+      .social-navigation {
+         a {
+            border: 1px solid $color__social-link;
+            transition: all 0.7s linear;
+
+            svg {
+               fill: $color__social-link-hover;
+               transition: all 0.7s linear;
+            }
+            &:hover,
+            &:focus {
+               transform: rotate(360deg);
+               border-color: $color__social-link-hover;
+
+               svg {
+                  fill: $color__social-link;
+               }
+            }
+         }
+      }
+   }
+
+   .footer__widget-area {
+      @include container-content;
+   }
+   
+   .site-info {
+      @include container;
+      margin-top: $header-margin;
+      text-align: center;
+      font-size: $font-size-14;
+      
+      a {
+         color: $color__text-main;
+         text-decoration: none;
+      }
+      a:hover {
+         color: $color__footer-link-hover;
+      }
+      .site-name {}
+
+      .copyright{}
+
+      a.privacy-policy-link {
+         border-bottom: 1px dotted;
+         padding-bottom: 1pt;
+      }
+      .sep {
+         color: $color__currentColor;
+      }
+      .theme-author {}
+
+   }
+   
+}

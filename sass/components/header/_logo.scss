@@ -1,0 +1,54 @@
+.site-branding {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-wrap: wrap;
+   max-width: calc( 100% - 36px);
+   // line-height: 1;
+   
+   a {
+      text-decoration: none;
+      margin: 0;
+      color: $color__site-title;
+   }
+   a:hover,
+	a:focus {
+      color: $color__site-title-hover;
+   }
+   .site-logo {
+      margin-right: 1em;
+
+      .custom-logo {
+         max-width: 180px;
+         max-height: 100px;
+         height: auto;
+         width: auto;
+      }
+   }
+   .site-title {
+      margin: 0 1em 0 0;
+      padding: 0;
+      font-size: $font-size-20;
+      font-weight: $font-weight-400;
+      max-width: 100%;
+   }
+   .site-description {
+      display: none;
+      margin: 0 1em 0 0;
+      font-size: $font-size-20;
+      // width: 100%;
+   }
+   @media screen and (min-width: $tablet-screen) {
+
+      .site-logo {
+         
+         .custom-logo {
+            max-width: 240px;
+            max-height: 240px;
+         }
+      }
+      .site-description {
+         display: block;
+      }
+   }
+}

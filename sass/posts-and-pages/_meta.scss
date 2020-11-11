@@ -1,0 +1,18 @@
+.entry-meta {
+	padding: 1em 0;
+}
+
+.entry-footer {
+	@include container;
+	margin-top: 1.6 * $main-spacing;
+	margin-bottom: 1.6 * $main-spacing;
+	padding: 1.5 * $main-spacing 0;
+	border-top: 1px solid $color__currentColor;
+
+	@media screen and (min-width: $content__width) {
+		margin-top: 3.4 * $main-spacing;
+	}
+}
+.single .entry-footer {
+	max-width: $content__width;
+}

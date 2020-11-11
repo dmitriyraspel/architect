@@ -1,0 +1,55 @@
+/**
+ * Button
+ */
+/**
+ * Block Options
+ */
+.wp-block-button {
+	// font-family: $font__main;
+	// font-size: $font-size-16;
+	font-weight: $font-weight-400;
+	line-height: $font__line-height-button;
+	
+	&.wp-block-button__link,
+	.wp-block-button__link {
+		background: $color__background-button;
+		border-radius: $radius-button;
+		padding: $button-padding-vertical $button-padding-horizontal;
+		&:hover {
+			background: $color__background-button-hover;
+			border-color: $color__border-button-hover;
+			transform: scale(1.1);
+		}
+		&:active,
+		&:focus {
+			background: $color__background-button-hover;
+			border-color: $color__border-button-focus;
+		}
+	}
+	// Outline Style
+	&.is-style-outline {
+		border: none;
+
+		&.wp-block-button__link,
+		.wp-block-button__link {
+			color: $color__background-button;
+			background: transparent;
+			border: 1px solid $color__background-button;
+			padding: $button-padding-vertical_is-style-outline $button-padding-horizontal_is-style-outline;
+
+			&:active {
+				color: $color__background-button;
+			}
+			&:hover,
+			&:focus,
+			&.has-focus {
+				color: $color__background-button-hover;
+				border-color: $color__background-button-hover;
+			}
+		}
+	}
+	// Squared Style
+	&.is-style-squared .wp-block-button__link {
+		border-radius: 0;
+	}
+}

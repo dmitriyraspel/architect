@@ -1,0 +1,37 @@
+.footer-navigation {
+   ul {
+
+      li {
+         display: inline-block;
+         padding-left: 2em;
+         @media screen and (min-width: $tablet-screen) {
+            display: block;
+            padding-left: 0;
+         }
+
+         a {
+            text-decoration: none;
+            display: inline-block;
+            color: $color__footer-link;
+            opacity: 0.85;
+
+            &:after {
+               display: block;
+               content: '';
+               border-bottom: 1px solid $color__footer-menu-link-hover;
+               transform: scaleX(0);
+               transition: all 0.3s ease-in-out;
+            }
+            &:hover,
+            &:focus {
+               color: $color__footer-link-hover;
+               opacity: 1;
+            }
+            &:hover::after,
+            &:focus::after {
+               transform: scaleX(1);
+            }
+         }
+      }
+   }
+}

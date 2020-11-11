@@ -1,0 +1,43 @@
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+	@include container;
+	margin-top: 1.5 * $main-spacing;
+	margin-bottom: 1.5 * $main-spacing;
+
+	.nav-previous,
+	.nav-next {
+		margin-top: 1em;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	a {
+		text-decoration: none;
+	}
+	
+	span.nav-subtitle {
+		color: $color__currentColor;
+	}
+
+	@media screen and (min-width: $tablet-screen) {
+		margin-top: 1.5 * $main-spacing;
+		margin-bottom: 1.5 * $main-spacing;
+		
+		.nav-previous {
+			flex: 1 0 50%;
+		}
+	
+		.nav-next {
+			text-align: end;
+			flex: 1 0 50%;
+		}	
+	}
+}
+.single .comment-navigation,
+.single .post-navigation {
+	max-width: $content__width;
+}

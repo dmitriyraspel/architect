@@ -1,0 +1,17 @@
+/* Content widht
+--------------------------------------------- */
+.wp-block {
+	max-width: $content__width;
+}
+
+/* Alignwide
+--------------------------------------------- */
+.wp-block[data-align="wide"] {
+	max-width: $alignwide__width;
+}
+
+/* Alignfull
+--------------------------------------------- */
+.wp-block[data-align="full"] {
+	max-width: none;
+}

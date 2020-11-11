@@ -1,0 +1,70 @@
+@import "_pink_mode";
+@import "_green_mode";
+@import "_blue_mode";
+@import "_wb_mode";
+@import "_dark_mode";
+
+
+$color__accent: #e16a36;
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1; // for screen-reader-text:focus
+
+$color__background-alt: #f7f7f7;
+$color__background-hr: $color__accent;
+$color__background-pre: $color__background-alt;
+$color__background-ins: lighten($color__accent,30%);
+
+$color__background-sub-menu:$color__background-body;
+$color__background-footer: $color__background-body; // закомментирована в стилях футера
+
+$color__currentColor: $color__accent;
+
+$color__text-main: #666;
+$color__text-heading: #111;
+
+$color__text-screen: #21759b;
+
+$color__text-input: $color__text-main;
+$color__text-input-focus: $color__text-heading;
+
+$color__link: $color__accent;
+$color__link-visited: lighten($color__link,8%);
+$color__link-hover: darken($color__link,8%);
+
+$color__social-link: $color__text-main;
+$color__social-link-hover: $color__accent;
+
+$color__footer-menu-link: $color__text-main;
+$color__footer-menu-link-hover: $color__accent;
+
+$color__meta-link: $color__text-main;
+$color__meta-link-hover: $color__accent;
+
+$color__button: $color__accent;
+$color__button-hover: darken($color__button,8%);
+
+$color__background-button: $color__accent;
+$color__background-button-hover: darken($color__background-button,8%);
+$color__border-button: $color__accent;
+$color__border-button-hover: darken($color__button,8%);
+$color__border-button-focus: darken($color__button,8%);
+
+$color__background-input: $color__background-alt;
+$color__border-input: lighten($color__accent,30%); // #eee
+$color__border-input-focus: $color__accent;
+$color__border-abbr: $color__text-heading;
+
+
+$color__site-title: $color__text-main;
+$color__site-title-hover: $color__accent;
+
+$color__burger: $color__text-main;
+$color__primary-nav_mob: $color__text-main;
+$color__primary-nav_mob-hover: $color__text-main;
+
+$color__primary-nav_pc: $color__text-main;
+$color__primary-nav_pc-hover: $color__accent;
+
+$color__footer-link: $color__text-main;
+$color__footer-link-hover: $color__accent;
