@@ -9,7 +9,12 @@
  *
  * @package Architect
  */
-
+$has_primary_nav = has_nav_menu( 'primary' );
+$wrapper_classes  = 'site-header';
+$wrapper_classes .= has_custom_logo() ? ' has-logo' : '';
+$wrapper_classes .= true === get_theme_mod( 'site_logo_and_title', true ) ? ' has-logo-and-title' : '';
+$wrapper_classes .= true === get_theme_mod( 'site_title_and_description', true ) ? ' has-title-and-tagline' : '';
+$wrapper_classes .= $has_primary_nav ? ' has-menu' : '';
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -27,7 +32,7 @@
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'architect'); ?></a>
 
-		<header id="masthead" class="site-header">
+		<header id="masthead" class="<?php echo $wrapper_classes; ?>">
 			<div class="header__inner">
 
 				<?php get_template_part('template-parts/header/site-branding'); ?>
