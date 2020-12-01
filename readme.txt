@@ -28,7 +28,6 @@ Architect is a beautiful Gutenberg WordPress theme for architect, designer and c
 
 Добавить плагин для проектов
 
-Architect includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
