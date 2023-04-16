@@ -65,6 +65,35 @@ function architect_customize_register( $wp_customize ) {
 		)
 	);
 
+	/* Add panel for theme settings ---------------- */
+	$wp_customize->add_section( 
+		'architect_theme_settings_section', 
+		array(
+			'title'      => __( 'Theme Settings', 'architect' ),
+			'priority'   => 30,
+		)
+ 	);
+
+	/* Disable global styles in header WP 5.9 ---------------- */
+	$wp_customize->add_setting(
+		'disable-global-styles',
+		array(
+			'default'	=> '',
+			'transport'            => 'refresh',
+			// 'type'                 => 'theme_mod',
+		)
+	);
+
+	$wp_customize->add_control(
+		'disable-global-styles',
+		array(
+			'type'        => 'checkbox',
+			'section'     => 'architect_theme_settings_section',
+			'priority'    => 5,
+			'label'       => __( 'Disable Global Style in Head', 'architect' ),
+		)
+	);
+
 }
 add_action( 'customize_register', 'architect_customize_register' );
 
